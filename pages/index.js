@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Header from '../components/Header';
 
 export default function Home() {
   return (
@@ -7,7 +8,15 @@ export default function Home() {
         <title>Facebook Clone</title>
       </Head>
 
-      <main>hello</main>
+      <Header />
+
+      <main>
+        {/* Sidebar */}
+
+        {/* Feed */}
+
+        {/* Widgets */}
+      </main>
     </div>
   );
 }

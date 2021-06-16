@@ -1,4 +1,5 @@
 import { getSession } from 'next-auth/client';
+import Login from '../components/Login';
 import Head from 'next/head';
 import Header from '../components/Header';
 

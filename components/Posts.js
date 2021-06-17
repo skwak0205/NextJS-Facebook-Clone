@@ -13,7 +13,7 @@ const Posts = ({ posts }) => {
         ? realtimePosts?.docs.map((post) => (
             <Post
               key={post.id}
-              name={post.data().message}
+              name={post.data().name}
               message={post.data().message}
               email={post.data().email}
               timestamp={post.data().timestamp}
@@ -21,10 +21,10 @@ const Posts = ({ posts }) => {
               postImage={post.data().postImage}
             />
           ))
-        : posts.map((post) => (
+        : posts.map((post, idx) => (
             <Post
-              key={post.id}
-              name={post.message}
+              key={idx}
+              name={post.name}
               message={post.message}
               email={post.email}
               timestamp={post.timestamp}
